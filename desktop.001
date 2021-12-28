@@ -1,0 +1,18 @@
+create or replace procedure DATE2INT
+(
+  dDATE             in date,
+  iYEAR             out number,
+  iMONTH            out number,
+  iDAY              out number
+)
+as
+begin
+  iYEAR  := to_number(to_char(dDATE,'YYYY'));
+  iMONTH := to_number(to_char(dDATE,'MM'));
+  iDAY   := to_number(to_char(dDATE,'DD'));
+  
+  --- 123123123
+  ----- GitHub
+  
+end DATE2INT;
+/
